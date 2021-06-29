@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include("../partials/header") %>
+    <h1>Register</h1>
+
+    <form action="/users/register" method="POST" enctype="multipart/form-data" class="formregister">   
+      <div style="margin-bottom:20px;">
+        <label>Nombre</label>
+        <input type="text" name="nombre" class="controlreg" value="">
+      </div>
+      <div style="margin-bottom:20px;">
+        <label>Email</label>
+        <input type="email" name="email" class="controlreg" value="">
+      </div>
+      <div style="margin-bottom:20px;">
+        <label>Password</label>      
+        <input type="password" name="password" class="controlreg" value="">   
+      </div>
+      <div style="margin-bottom:20px;">
+        <label>Nacionalidad</label>      
+        <select name="nacionalidad" class="">
+          <% let paises = ["Argentina","Mexico","Brasil","Chile"]; %>
+          <% for (let i = 0; i < paises.length; i++){ %>
+            <% const pais = paises[i]; %>
+          <option value=""><%= pais%></option>
+          <% } %>
+        </select>
+      </div>            
+      <div style="margin-bottom:20px;">
+        <label>Foto</label>      
+        <input type="file" name="imagen" class="" value="">
+      </div>
+      <div class="botones-register">
+      <input type="submit" value="Registrate" class="btn">
+    </div>   
+    </form>
+    
+  </body>
+</html>

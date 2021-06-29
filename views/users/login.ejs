@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include("../partials/header") %>
+    <h1>Login</h1>
+    
+    <form action="/users/register" method="POST" enctype="multipart/form-data" class="formlogin">   
+      <div style="margin-bottom:20px;">
+        <label>Email</label>
+        <input type="email" name="email" class="controllog" value="">
+      </div>
+      <div style="margin-bottom:20px;">
+        <label>Password</label>      
+        <input type="password" name="password" class="controllog" value="">   
+      </div>
+      <div class="botones-login">          
+      <input type="submit" value="Login" class="btn">
+    </div>   
+    </form>
+
+  </body>
+</html>

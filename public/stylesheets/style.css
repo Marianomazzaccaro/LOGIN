@@ -1,0 +1,78 @@
+body {
+  padding: 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: rgba(255, 192, 224, 0.719);
+  
+}
+body p{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a {
+  color: #00a651;
+}
+
+nav{
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+/*FORMULARIO DE REGISTRO*/
+
+.formregister {
+  padding: 20px 15px; 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.controlreg {
+  width:100%;
+  padding: 8px 8px;
+  border: solid 1px #1259c3;
+
+}
+.botones-register{
+  text-align: center;
+
+}
+
+.btn{
+  background-color: #00a651;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+  padding: 12px;
+}
+
+/*FORMULARIO DE LOGIN*/
+.formlogin{
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.controllog{
+  width:100%;
+  padding: 8px 8px;
+  border: solid 1px #1259c3;
+}
+
+.botones-login{
+  text-align: center;
+
+}
